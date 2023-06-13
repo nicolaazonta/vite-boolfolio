@@ -1,21 +1,27 @@
 <script>
-import { store } from 
+import { store } from '../store'
 
 export default {
-    name: "HelloWorld",
+    name: 'SiteMain',
+    data(){
+        return {
+            store
+        }
+    },
 }
 </script>
 
 <template>
     <div class="container w-75">
-        <div class="row">
-            <div class="col-4">
-                <div class="card">
+        <h1 class="text-center"> SSA  SSSA  PPPROVA</h1>
 
+        <div class="row">
+            <div class="col-4" v-for="project in store.projects">
+                <div class="card">
+                    {{ project.name }}
                 </div>
             </div>
         </div>
-        <div class="card"></div>
     </div>
 </template>
 
