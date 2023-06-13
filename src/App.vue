@@ -8,6 +8,7 @@ export default {
 }
 </script>
 
+
 <template>
     <section class="vue-home">
         <div class="container">
