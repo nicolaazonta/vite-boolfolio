@@ -2,6 +2,7 @@
 import { store } from './store';
 import SiteMain from './components/SiteMain.vue'
 
+
 export default {
     components: {
         SiteMain,
@@ -13,9 +14,8 @@ export default {
 </script>
 
 <template>
-    <SiteMain>
-
-    </SiteMain>
+    <Appheader></Appheader>
+    <router-view></router-view>
 </template>
 
 <style lang="scss">
