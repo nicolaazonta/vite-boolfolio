@@ -1,6 +1,6 @@
 <script>
 import { store } from './store';
-import { AppHeader } from './components/AppHeader.vue';
+import  AppHeader  from './components/AppHeader.vue';
 
 
 export default {

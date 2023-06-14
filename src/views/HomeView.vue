@@ -1,9 +1,9 @@
 <script>
-import  { AppHeader } from '../components/AppHeader.vue';
+import  AppHeader  from '../components/AppHeader.vue';
 
 export default {
     name: "HomeView",
-    components: { AppHeader }
+    /* components: { AppHeader } */
 }
 </script>
 <template>
