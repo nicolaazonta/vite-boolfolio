@@ -1,11 +1,11 @@
 <script>
 import { store } from './store';
-import SiteMain from './components/SiteMain.vue'
+import { AppHeader } from './components/AppHeader.vue';
 
 
 export default {
     components: {
-        SiteMain,
+        AppHeader,        
     },
     mounted(){
         store.fetchProjects('http://127.0.0.1:8000/api/projects');
@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-    <Appheader></Appheader>
+    <AppHeader></AppHeader>
     <router-view></router-view>
 </template>
 

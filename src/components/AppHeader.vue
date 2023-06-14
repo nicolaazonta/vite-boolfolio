@@ -2,9 +2,9 @@
 import { store } from '../store';
 
 export default {
-    name : 'AppHeader',
+    name: 'AppHeader',
     data() {
-        return{
+        return {
             store
         };
     }
@@ -13,7 +13,10 @@ export default {
 
 <template>
     <div>
-    <!-- <router-link class="nav-link" :to="{'name' : 'home'}" aria-current="page">Home</router-link> -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <router-link class="nav-link" :to="{ 'name': 'home' }" aria-current="page">Home</router-link>
+            <router-link class="nav-link" :to="{ 'name': 'projects' }" aria-current="page">projects</router-link>
+        </nav>
 
     </div>
 </template>

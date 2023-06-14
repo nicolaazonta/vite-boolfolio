@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from './views/HomeView.vue'
-import ProjectsView from './views/AboutView.vue'
+import ProjectsView from './views/ProjectsView.vue'
 
 
 const router = createRouter({
@@ -19,4 +19,4 @@ const router = createRouter({
     ]
 })
 
-export {router}
+export { router };

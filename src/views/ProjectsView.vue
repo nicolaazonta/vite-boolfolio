@@ -1,6 +1,7 @@
 <script>
 import { store } from '../store'
-import ProjectCardVue, { ProjectCard } from './ProjectCard.vue'
+import { ProjectCard } from '../components/ProjectCard.vue'
+import  { AppHeader } from '../components/AppHeader.vue';
 
 
 export default {
@@ -10,12 +11,14 @@ export default {
             store
         };
     },
-    components: { ProjectCardVue }
+    components: { ProjectCard }
 }
 </script>
 
 <template>
+    <AppHeader/>
     <div class="container w-75">
+        <h1>projects view</h1>
         <h1 class="text-center"> SSA SSSA PPPROVA</h1>
 
         <div class="row">
