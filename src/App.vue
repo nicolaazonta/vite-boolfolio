@@ -1,7 +1,7 @@
 <script>
 import { store } from './store';
 import  AppHeader  from './components/AppHeader.vue';
-
+import axios from "axios";
 
 export default {
     components: {
@@ -17,8 +17,9 @@ export default {
     mounted(){
        /*  store.fetchProjects(this.base_api);
         store.fetchSingleProject(this.base_api + this.$route.params.slug) */
-        store.fetchProjects(store.base_api);
-        store.fetchSingleProject(store.base_api+this.$route.params.slug);
+        store.fetchProjects(this.store.base_api);
+        /* store.fetchSingleProject(this.store.base_api+this.$route.params.slug); */
+
     }
 }
 </script>
