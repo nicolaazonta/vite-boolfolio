@@ -18,9 +18,11 @@ export default {
         <router-link class="text-decoration-none" :to="{ name: 'project-inside', params: { slug: project.slug } }">
 
 
-            <div class="card">
+            <div class="card text_color card_bg card_hover p-1 h-100">
                 <div class="card-title">
-                    <h2>{{ project.name }}</h2>
+                    <h4>{{ project.name }}</h4>
+                    <h4>{{ project.type?.name }}</h4>                   
+
                 </div>
             </div>
 
