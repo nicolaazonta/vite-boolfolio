@@ -1,15 +1,12 @@
 <script>
-/* import  AppHeader  from '../components/AppHeader.vue'; */
 
 export default {
     name: "HomeView",
-    /* components: { AppHeader } */
 }
 </script>
 <template>
-    <!-- <AppHeader/> -->
-    <div>
-        <h1>home view</h1>
+    <div class="container w-50">
+        <h6>home view</h6>
     </div>
 </template>
 

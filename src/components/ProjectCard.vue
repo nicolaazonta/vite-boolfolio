@@ -13,9 +13,9 @@ export default {
 </script>
 
 <template>
-    <div class="col-4" v-for="project in store.projects">
+    <div class="col-4 g-3" v-for="project in store.projects">
 
-        <router-link :to="{ name: 'project-inside', params: { slug: project.slug } }">
+        <router-link class="text-decoration-none" :to="{ name: 'project-inside', params: { slug: project.slug } }">
 
 
             <div class="card">

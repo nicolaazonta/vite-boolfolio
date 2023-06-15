@@ -2,20 +2,25 @@ import { reactive } from "vue";
 import axios from "axios";
 export const store = reactive({
     projects: [],
+    data() {
+        return {
+            base_api: "http://127.0.0.1:8000/api/projects",
+        }
+    },
 
     fetchProjects(url) {
-        axios
+            axios
             .get(url)
             .then(response => {
-                this.projects = response.data.projects.data;
+                this.projects = response.data.projects;
             })
             .catch(err => {
                 console.log(err);
                 console.log(err.message);
             })
     },
-    fetchSingleProject() {
-        axios
+    fetchSingleProject(url) {
+            axios
             .get(url)
             .then(response => {
                 if (response.data.success) {
@@ -23,7 +28,7 @@ export const store = reactive({
                 } else {
                     this.$router.push({
                         name: 'project-not-found',
-                        params: { pathMatch: this.$route.path.substring(1).split('/')}
+                        params: { pathMatch: this.$route.path.substring(1).split('/') }
                     })
                 }
             })

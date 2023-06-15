@@ -7,9 +7,18 @@ export default {
     components: {
         AppHeader,        
     },
+
+    data(){
+        return{
+            store
+        }
+    },
+    
     mounted(){
-        store.fetchProjects('http://127.0.0.1:8000/api/projects');
-        store.fetchSingleProject('http://127.0.0.1:8000/api/project')
+       /*  store.fetchProjects(this.base_api);
+        store.fetchSingleProject(this.base_api + this.$route.params.slug) */
+        store.fetchProjects(store.base_api);
+        store.fetchSingleProject(store.base_api+this.$route.params.slug);
     }
 }
 </script>
