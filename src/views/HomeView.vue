@@ -1,5 +1,5 @@
 <script>
-import  AppHeader  from '../components/AppHeader.vue';
+/* import  AppHeader  from '../components/AppHeader.vue'; */
 
 export default {
     name: "HomeView",
@@ -7,7 +7,7 @@ export default {
 }
 </script>
 <template>
-    <AppHeader/>
+    <!-- <AppHeader/> -->
     <div>
         <h1>home view</h1>
     </div>
