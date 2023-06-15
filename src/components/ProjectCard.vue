@@ -3,9 +3,7 @@ import { store } from '../store'
 
 export default {
     name: 'ProjectCard',
-    props: {
-        project: Object,
-    },
+    
     data() {
         return {
             store
@@ -17,11 +15,17 @@ export default {
 <template>
     <div class="col-4" v-for="project in store.projects">
 
-        <div class="card">
-            <div class="card-title">
-                <h2>{{ project.name }}</h2>
+        <router-link :to="{ name: 'project-inside', params: { slug: project.slug } }">
+
+
+            <div class="card">
+                <div class="card-title">
+                    <h2>{{ project.name }}</h2>
+                </div>
             </div>
-        </div>
+
+        </router-link>
+
     </div>
 </template >
 

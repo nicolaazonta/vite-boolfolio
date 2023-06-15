@@ -1,17 +1,13 @@
 <script>
 import { store } from '../store'
-import  ProjectCard  from '../components/ProjectCard.vue';
-/* import   AppHeader  from '../components/AppHeader.vue'; */
-
 
 export default {
-    name: "ProjectsView",
+    name: "ProjectInsideView",
     data() {
         return {
             store
         };
     },
-    components: { ProjectCard }
 }
 </script>
 
