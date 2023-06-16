@@ -1,19 +1,37 @@
 <script>
 import { store } from '../store'
+import axios from 'axios'
 
 export default {
     name: 'ProjectCard',
 
     data() {
         return {
+            projects: null,
             store
         }
+    },
+    methods: {
+        fetchProjects(url) {
+            axios
+                .get(url)
+                .then(response => {
+                    this.projects = response.data.projects;
+                })
+                .catch(err => {
+                    console.log(err);
+                    console.log(err.message);
+                })
+        }
+    },
+    mounted() {
+        this.fetchProjects(this.store.base_api)
     },
 }
 </script>
 
-<template v-if="store.projects" >
-    <div class="g-2  g-md-4" v-for="project in store.projects" >
+<template v-if="projects" >
+    <div class="g-2  g-md-4" v-for="project in projects">
 
         <router-link class="text-decoration-none" :to="{ name: 'project-inside', params: { slug: project.slug } }">
 

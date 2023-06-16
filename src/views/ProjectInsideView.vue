@@ -31,9 +31,7 @@ export default {
         }
     },
     mounted() {
-
         this.fetchSingleProject(this.store.base_api + '/' + this.$route.params.slug);
-
     }
 }
 </script>

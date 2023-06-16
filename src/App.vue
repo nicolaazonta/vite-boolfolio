@@ -17,7 +17,7 @@ export default {
     mounted(){
        /*  store.fetchProjects(this.base_api);
         store.fetchSingleProject(this.base_api + this.$route.params.slug) */
-        store.fetchProjects(this.store.base_api);
+        /* store.fetchProjects(this.store.base_api); */
         /* store.fetchSingleProject(this.store.base_api+this.$route.params.slug); */
 
     }

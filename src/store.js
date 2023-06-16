@@ -1,12 +1,12 @@
 import { reactive } from "vue";
 import axios from "axios";
 export const store = reactive({
-    projects: null,
-    project: null,
+    /* projects: null,
+    project: null, */
     base_api: "http://127.0.0.1:8000/api/projects",
 
 
-    fetchProjects(url) {
+   /*  fetchProjects(url) {
             axios
             .get(url)
             .then(response => {
@@ -16,7 +16,7 @@ export const store = reactive({
                 console.log(err);
                 console.log(err.message);
             })
-    },
+    }, */
    /*  fetchSingleProject(url) {
             axios
             .get(url)
