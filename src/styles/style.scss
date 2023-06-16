@@ -19,10 +19,16 @@ body {
         background-color: rgba(0, 0, 0, 0.644);
     }
 
+    .card_hover{
+        transition-property: all;
+        transition-duration: .3s;
+    }
+
     & .card_hover:hover {
         background-color: rgba(0, 0, 0, 0.47);
         color: rgba(150, 255, 255, 0.874);
-        scale: 1.02;
+        scale: 1.06;
         padding: .3rem!important;
+        border-radius: .75rem;
     }
 }
