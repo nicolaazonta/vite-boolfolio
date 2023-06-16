@@ -10,7 +10,7 @@ export const store = reactive({
             axios
             .get(url)
             .then(response => {
-                this.projects = response.data.projects.data;
+                this.projects = response.data.projects;
             })
             .catch(err => {
                 console.log(err);

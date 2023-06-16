@@ -14,8 +14,11 @@ export default {
 
 <template>
     <div class="container w-50">
-        <!-- <AppHeader/> -->
-        <h6>contacts view</h6>
+        <div class="row row-cols-lg-2 row-cols-md-1">
+            <div class="col">
+                <div class="card"></div>
+            </div>
+        </div>
        
     </div>
 </template>

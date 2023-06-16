@@ -2,9 +2,23 @@
 @use "/node_modules/bootstrap/scss/bootstrap";
 
 
+.router-link-active {
+    color: rgba(51, 200, 200, 0.874) !important;
+
+}
 
 header {
-    background-color: rgba(0, 0, 0, 0.644) !important;
+    background-color: rgba(15, 15, 15, 0.916) !important;
+
+    .header_link {
+        border-radius: .5rem;
+        transition-property: all;
+        transition-duration: .4s;
+    }
+
+    & .header_link:hover {
+        background-color: rgba(40, 40, 40, 0.97) !important;
+    }
 }
 
 .text_color {
@@ -19,7 +33,7 @@ body {
         background-color: rgba(0, 0, 0, 0.644);
     }
 
-    .card_hover{
+    .card_hover {
         transition-property: all;
         transition-duration: .3s;
     }
@@ -28,7 +42,21 @@ body {
         background-color: rgba(0, 0, 0, 0.47);
         color: rgba(150, 255, 255, 0.874);
         scale: 1.06;
-        padding: .3rem!important;
+        /* padding: .3rem!important; */
         border-radius: .75rem;
+    }
+
+    & .cacao_form::placeholder {
+        color: rgba(181, 176, 176, 0.56);
+        text-transform: uppercase;
+    }
+
+    & .cacao_form {
+        background-color: rgba(0, 0, 0, 0.644) !important;
+        border: none;
+        color: whitesmoke !important;
+        text-align: center;
+        text-transform: uppercase;
+
     }
 }
