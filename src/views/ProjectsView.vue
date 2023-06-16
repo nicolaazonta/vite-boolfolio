@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-    <div class="w-auto container-md">
+    <div class="container w-75">
 
         <div class="row  d-flex justify-content-center mt-2 mt-md-4">
             <div class="col">

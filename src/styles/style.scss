@@ -10,6 +10,22 @@
 header {
     background-color: rgba(15, 15, 15, 0.916) !important;
 
+    & img{
+        height: 50px;
+        transition-property: all;
+        transition-duration: .2s;
+    }
+
+    & .logo_link{
+        transition-property: all;
+        transition-duration: .2s;
+        filter: grayscale(1);
+    }
+
+    & .logo_link:hover{
+        filter: none;
+    }
+
     .header_link {
         border-radius: .5rem;
         transition-property: all;
@@ -18,6 +34,14 @@ header {
 
     & .header_link:hover {
         background-color: rgba(40, 40, 40, 0.97) !important;
+    }
+
+    & .center_group{
+        justify-self: center;
+    }
+
+    & .logo_group{
+        justify-self: start;
     }
 }
 
@@ -33,7 +57,7 @@ body {
         background-color: rgba(0, 0, 0, 0.644);
     }
 
-    .card_hover {
+    & .card_hover {
         transition-property: all;
         transition-duration: .3s;
     }
@@ -49,6 +73,23 @@ body {
     & .cacao_form::placeholder {
         color: rgba(181, 176, 176, 0.56);
         text-transform: uppercase;
+    }
+
+    & .cacao_form {
+        transition-property: all;
+        transition-duration: .2s;
+        
+    }
+    & .cacao_form:hover {
+        padding: 1.5rem 0;
+        border-radius: 2rem;
+        font-size: 2rem;
+    }
+
+    & .cacao_form:focus {
+        padding: 1.5rem 0;
+        border-radius: 2rem;
+        font-size: 2rem;
     }
 
     & .cacao_form {
